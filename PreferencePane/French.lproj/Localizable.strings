@@ -1,0 +1,15 @@
+/* Not Running */
+NotRunning = "CatNip n'est pas activé.";
+
+/* Running */
+IsRunning = "CatNip est activé.";
+
+/* Starting */
+IsStarting = "Démarrage de CatNip…";
+
+/* Start Command */
+StartCommand = "Démarrer CatNip";
+
+/* Stop Command */
+StopCommand = "Arrêter CatNip";
+

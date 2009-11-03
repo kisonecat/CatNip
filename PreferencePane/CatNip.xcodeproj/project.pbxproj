@@ -1,0 +1,359 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 44;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7B1EA6720F633CB400B15E10 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7B1EA6710F633CB400B15E10 /* InfoPlist.strings */; };
+		7B1EA6C10F63450600B15E10 /* Help in Resources */ = {isa = PBXBuildFile; fileRef = 7B1EA6C00F63450600B15E10 /* Help */; };
+		7B6C8AF80B5B1F8200EDD2F0 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B6C8AF70B5B1F8200EDD2F0 /* Carbon.framework */; };
+		7BE977B30B2DF29C00A414D0 /* CatNipPanePref.h in Headers */ = {isa = PBXBuildFile; fileRef = 7BE977B00B2DF29C00A414D0 /* CatNipPanePref.h */; };
+		7BE977B40B2DF29C00A414D0 /* CatNipPanePref.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BE977B10B2DF29C00A414D0 /* CatNipPanePref.m */; };
+		7BE977B80B2DF2AD00A414D0 /* CatNipPanePref.nib in Resources */ = {isa = PBXBuildFile; fileRef = 7BE977B60B2DF2AD00A414D0 /* CatNipPanePref.nib */; };
+		7BE977BC0B2DF2EF00A414D0 /* CatNipPrefPane.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 7BE977BB0B2DF2EF00A414D0 /* CatNipPrefPane.tiff */; };
+		7BE977E40B2DF40A00A414D0 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8D202CF70486D31800D8A456 /* Info.plist */; };
+		7BE9796C0B2E5BC200A414D0 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BE9796B0B2E5BC200A414D0 /* Security.framework */; };
+		7BE97C060B2F1BE100A414D0 /* CatNip.icns in Resources */ = {isa = PBXBuildFile; fileRef = 7BE97C050B2F1BE100A414D0 /* CatNip.icns */; };
+		8D202CEA0486D31800D8A456 /* CatNip_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 32DBCFA20370C41700C91783 /* CatNip_Prefix.pch */; };
+		8D202CED0486D31800D8A456 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C167DFE841241C02AAC07 /* Localizable.strings */; };
+		8D202CF30486D31800D8A456 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */; };
+		8D202CF40486D31800D8A456 /* PreferencePanes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F506C035013D953901CA16C8 /* PreferencePanes.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		089C1672FE841209C02AAC07 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		089C167EFE841241C02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/Localizable.strings; sourceTree = "<group>"; };
+		089C167FFE841241C02AAC07 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		32DBCFA20370C41700C91783 /* CatNip_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CatNip_Prefix.pch; sourceTree = "<group>"; };
+		7B1EA66B0F633CAA00B15E10 /* English */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		7B1EA6780F633CCE00B15E10 /* French */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = French; path = French.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		7B1EA6CA0F6345CC00B15E10 /* French */ = {isa = PBXFileReference; lastKnownFileType = folder; name = French; path = ../French.lproj/Help; sourceTree = SOURCE_ROOT; };
+		7B6C8AA10B5B152800EDD2F0 /* English */ = {isa = PBXFileReference; lastKnownFileType = folder; name = English; path = ../English.lproj/Help; sourceTree = SOURCE_ROOT; };
+		7B6C8AF70B5B1F8200EDD2F0 /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = /System/Library/Frameworks/Carbon.framework; sourceTree = "<absolute>"; };
+		7BB377790F63365100C1E047 /* French */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = French; path = French.lproj/CatNipPanePref.nib; sourceTree = "<group>"; };
+		7BB377990F63374300C1E047 /* French */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = French; path = French.lproj/Localizable.strings; sourceTree = "<group>"; };
+		7BE977B00B2DF29C00A414D0 /* CatNipPanePref.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = CatNipPanePref.h; sourceTree = "<group>"; };
+		7BE977B10B2DF29C00A414D0 /* CatNipPanePref.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = CatNipPanePref.m; sourceTree = "<group>"; };
+		7BE977B70B2DF2AD00A414D0 /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/CatNipPanePref.nib; sourceTree = "<group>"; };
+		7BE977BB0B2DF2EF00A414D0 /* CatNipPrefPane.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = CatNipPrefPane.tiff; sourceTree = "<group>"; };
+		7BE9796B0B2E5BC200A414D0 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = /System/Library/Frameworks/Security.framework; sourceTree = "<absolute>"; };
+		7BE97C050B2F1BE100A414D0 /* CatNip.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = CatNip.icns; path = ../Images/CatNip.icns; sourceTree = SOURCE_ROOT; };
+		8D202CF70486D31800D8A456 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		8D202CF80486D31800D8A456 /* CatNip.prefPane */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CatNip.prefPane; sourceTree = BUILT_PRODUCTS_DIR; };
+		F506C035013D953901CA16C8 /* PreferencePanes.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PreferencePanes.framework; path = /System/Library/Frameworks/PreferencePanes.framework; sourceTree = "<absolute>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D202CF20486D31800D8A456 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D202CF30486D31800D8A456 /* Cocoa.framework in Frameworks */,
+				8D202CF40486D31800D8A456 /* PreferencePanes.framework in Frameworks */,
+				7BE9796C0B2E5BC200A414D0 /* Security.framework in Frameworks */,
+				7B6C8AF80B5B1F8200EDD2F0 /* Carbon.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		089C166AFE841209C02AAC07 /* CatNip */ = {
+			isa = PBXGroup;
+			children = (
+				08FB77AFFE84173DC02AAC07 /* Classes */,
+				32DBCFA10370C40200C91783 /* Other Sources */,
+				089C167CFE841241C02AAC07 /* Resources */,
+				089C1671FE841209C02AAC07 /* Frameworks and Libraries */,
+				19C28FB8FE9D52D311CA2CBB /* Products */,
+			);
+			name = CatNip;
+			sourceTree = "<group>";
+		};
+		089C1671FE841209C02AAC07 /* Frameworks and Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7ACFEA557BF11CA2CBB /* Linked Frameworks */,
+				1058C7AEFEA557BF11CA2CBB /* Other Frameworks */,
+			);
+			name = "Frameworks and Libraries";
+			sourceTree = "<group>";
+		};
+		089C167CFE841241C02AAC07 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7B6C8AF70B5B1F8200EDD2F0 /* Carbon.framework */,
+				7B1EA6C00F63450600B15E10 /* Help */,
+				7BE977B60B2DF2AD00A414D0 /* CatNipPanePref.nib */,
+				8D202CF70486D31800D8A456 /* Info.plist */,
+				089C167DFE841241C02AAC07 /* Localizable.strings */,
+				7B1EA6710F633CB400B15E10 /* InfoPlist.strings */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		08FB77AFFE84173DC02AAC07 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		1058C7ACFEA557BF11CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */,
+				F506C035013D953901CA16C8 /* PreferencePanes.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7AEFEA557BF11CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				089C1672FE841209C02AAC07 /* Foundation.framework */,
+				089C167FFE841241C02AAC07 /* AppKit.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		19C28FB8FE9D52D311CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D202CF80486D31800D8A456 /* CatNip.prefPane */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		32DBCFA10370C40200C91783 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32DBCFA20370C41700C91783 /* CatNip_Prefix.pch */,
+				7BE977B00B2DF29C00A414D0 /* CatNipPanePref.h */,
+				7BE97C050B2F1BE100A414D0 /* CatNip.icns */,
+				7BE977B10B2DF29C00A414D0 /* CatNipPanePref.m */,
+				7BE9796B0B2E5BC200A414D0 /* Security.framework */,
+				7BE977BB0B2DF2EF00A414D0 /* CatNipPrefPane.tiff */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		8D202CE90486D31800D8A456 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D202CEA0486D31800D8A456 /* CatNip_Prefix.pch in Headers */,
+				7BE977B30B2DF29C00A414D0 /* CatNipPanePref.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		8D202CE80486D31800D8A456 /* CatNip */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DBD214808BA80EA00186707 /* Build configuration list for PBXNativeTarget "CatNip" */;
+			buildPhases = (
+				8D202CE90486D31800D8A456 /* Headers */,
+				8D202CEC0486D31800D8A456 /* Resources */,
+				8D202CF00486D31800D8A456 /* Sources */,
+				8D202CF20486D31800D8A456 /* Frameworks */,
+				8D202CF50486D31800D8A456 /* Rez */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CatNip;
+			productInstallPath = "$(HOME)/Library/PreferencePanes";
+			productName = CatNip;
+			productReference = 8D202CF80486D31800D8A456 /* CatNip.prefPane */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		089C1669FE841209C02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 1DBD214C08BA80EA00186707 /* Build configuration list for PBXProject "CatNip" */;
+			compatibilityVersion = "Xcode 3.0";
+			hasScannedForEncodings = 1;
+			mainGroup = 089C166AFE841209C02AAC07 /* CatNip */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8D202CE80486D31800D8A456 /* CatNip */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D202CEC0486D31800D8A456 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D202CED0486D31800D8A456 /* Localizable.strings in Resources */,
+				7BE977B80B2DF2AD00A414D0 /* CatNipPanePref.nib in Resources */,
+				7BE977BC0B2DF2EF00A414D0 /* CatNipPrefPane.tiff in Resources */,
+				7BE977E40B2DF40A00A414D0 /* Info.plist in Resources */,
+				7BE97C060B2F1BE100A414D0 /* CatNip.icns in Resources */,
+				7B1EA6C10F63450600B15E10 /* Help in Resources */,
+				7B1EA6720F633CB400B15E10 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXRezBuildPhase section */
+		8D202CF50486D31800D8A456 /* Rez */ = {
+			isa = PBXRezBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXRezBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D202CF00486D31800D8A456 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7BE977B40B2DF29C00A414D0 /* CatNipPanePref.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		089C167DFE841241C02AAC07 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				089C167EFE841241C02AAC07 /* English */,
+				7BB377990F63374300C1E047 /* French */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		7B1EA6710F633CB400B15E10 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7B1EA66B0F633CAA00B15E10 /* English */,
+				7B1EA6780F633CCE00B15E10 /* French */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		7B1EA6C00F63450600B15E10 /* Help */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7B6C8AA10B5B152800EDD2F0 /* English */,
+				7B1EA6CA0F6345CC00B15E10 /* French */,
+			);
+			name = Help;
+			sourceTree = "<group>";
+		};
+		7BE977B60B2DF2AD00A414D0 /* CatNipPanePref.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7BE977B70B2DF2AD00A414D0 /* English */,
+				7BB377790F63365100C1E047 /* French */,
+			);
+			name = CatNipPanePref.nib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1DBD214908BA80EA00186707 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = CatNip_Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Library/PreferencePanes";
+				PRODUCT_NAME = CatNip;
+				WRAPPER_EXTENSION = prefPane;
+				ZERO_LINK = YES;
+			};
+			name = Debug;
+		};
+		1DBD214A08BA80EA00186707 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					ppc,
+					i386,
+				);
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = CatNip_Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Library/PreferencePanes";
+				PRODUCT_NAME = CatNip;
+				WRAPPER_EXTENSION = prefPane;
+			};
+			name = Release;
+		};
+		1DBD214D08BA80EA00186707 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT_PRE_XCODE_3_1)";
+				ARCHS_STANDARD_32_64_BIT_PRE_XCODE_3_1 = "x86_64 i386 ppc";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.5.sdk";
+			};
+			name = Debug;
+		};
+		1DBD214E08BA80EA00186707 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT_PRE_XCODE_3_1)";
+				ARCHS_STANDARD_32_64_BIT_PRE_XCODE_3_1 = "x86_64 i386 ppc";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.5.sdk";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DBD214808BA80EA00186707 /* Build configuration list for PBXNativeTarget "CatNip" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DBD214908BA80EA00186707 /* Debug */,
+				1DBD214A08BA80EA00186707 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DBD214C08BA80EA00186707 /* Build configuration list for PBXProject "CatNip" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DBD214D08BA80EA00186707 /* Debug */,
+				1DBD214E08BA80EA00186707 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 089C1669FE841209C02AAC07 /* Project object */;
+}

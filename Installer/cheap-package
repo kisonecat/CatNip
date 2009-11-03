@@ -1,0 +1,17 @@
+#! /bin/bash
+
+cd ../Daemon
+xcodebuild -project CatNip.xcodeproj -configuration Release clean build
+
+cd ../PreferencePane
+xcodebuild -project CatNip.xcodeproj -configuration Release clean build
+
+cd ../Installer
+rm -rf staging/CatNip.prefPane
+mv ../PreferencePane/build/Release/CatNip.prefPane ./staging/CatNip.prefPane
+mv ../Daemon/build/Release/CatNip.app ./staging/CatNip.prefPane/Contents/Resources/
+
+rm -rf image
+mkdir image
+cp -R staging/* image/
+./pkg-dmg --source image --target CatNip.dmg --volname "CatNip"

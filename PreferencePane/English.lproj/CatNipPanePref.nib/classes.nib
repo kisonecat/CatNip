@@ -1,0 +1,43 @@
+{
+    IBClasses = (
+        {
+            ACTIONS = {
+                changeSensitivity = id; 
+                checkboxClicked = id; 
+                clickStartAtLogin = id; 
+                donate = id; 
+                sendEmail = id; 
+                showCatNipHelp = id; 
+                showHelp = id; 
+                startStopDaemon = id; 
+            }; 
+            CLASS = CatNipPanePref; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                buttonToggleDaemon = NSButton; 
+                checkboxDisplayMessage = NSButton; 
+                checkboxFadeDesktop = NSButton; 
+                checkboxPlaySound = NSButton; 
+                checkboxStartAtLogin = NSButton; 
+                sliderSensitivity = NSSlider; 
+                textAuthorName = NSTextField; 
+                textHumanPassword = NSTextField; 
+                textfieldDaemonStatus = NSTextField; 
+            }; 
+            SUPERCLASS = NSPreferencePane; 
+        }, 
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            CLASS = NSPreferencePane; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                "_firstKeyView" = id; 
+                "_initialKeyView" = id; 
+                "_lastKeyView" = id; 
+                "_window" = id; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }
+    ); 
+    IBVersion = 1; 
+}
