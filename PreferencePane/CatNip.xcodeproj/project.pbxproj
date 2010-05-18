@@ -27,6 +27,10 @@
 		089C167EFE841241C02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/Localizable.strings; sourceTree = "<group>"; };
 		089C167FFE841241C02AAC07 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		58242A7C11A29DD90029B2CB /* zh_TW */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = zh_TW; path = zh_TW.lproj/CatNipPanePref.nib; sourceTree = "<group>"; };
+		58242A7F11A29DEA0029B2CB /* zh_TW */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = zh_TW; path = zh_TW.lproj/Localizable.strings; sourceTree = "<group>"; };
+		58242A8011A29DF60029B2CB /* zh_TW */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = zh_TW; path = zh_TW.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		58242A8111A29DFF0029B2CB /* zh_TW */ = {isa = PBXFileReference; lastKnownFileType = folder; name = zh_TW; path = ../zh_TW.lproj/Help; sourceTree = SOURCE_ROOT; };
 		58C00DC111A02464008A278A /* CatNip_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CatNip_Prefix.pch; sourceTree = "<group>"; };
 		7B1EA66B0F633CAA00B15E10 /* English */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		7B1EA6780F633CCE00B15E10 /* French */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = French; path = French.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -184,6 +188,13 @@
 			buildConfigurationList = 1DBD214C08BA80EA00186707 /* Build configuration list for PBXProject "CatNip" */;
 			compatibilityVersion = "Xcode 3.0";
 			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+				zh_TW,
+			);
 			mainGroup = 089C166AFE841209C02AAC07 /* CatNip */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -236,6 +247,7 @@
 			children = (
 				089C167EFE841241C02AAC07 /* English */,
 				7BB377990F63374300C1E047 /* French */,
+				58242A7F11A29DEA0029B2CB /* zh_TW */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
@@ -245,6 +257,7 @@
 			children = (
 				7B1EA66B0F633CAA00B15E10 /* English */,
 				7B1EA6780F633CCE00B15E10 /* French */,
+				58242A8011A29DF60029B2CB /* zh_TW */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -254,6 +267,7 @@
 			children = (
 				7B6C8AA10B5B152800EDD2F0 /* English */,
 				7B1EA6CA0F6345CC00B15E10 /* French */,
+				58242A8111A29DFF0029B2CB /* zh_TW */,
 			);
 			name = Help;
 			sourceTree = "<group>";
@@ -263,6 +277,7 @@
 			children = (
 				7BE977B70B2DF2AD00A414D0 /* English */,
 				7BB377790F63365100C1E047 /* French */,
+				58242A7C11A29DD90029B2CB /* zh_TW */,
 			);
 			name = CatNipPanePref.nib;
 			sourceTree = "<group>";
