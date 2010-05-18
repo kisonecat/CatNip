@@ -57,39 +57,30 @@
 	
 	if (displayMessage)
 	{
-		float textheight = height/20;
-		
-		CGContextSelectFont (myContext,
-							 "LucidaGrande-Bold",
-							 textheight,
-							 kCGEncodingMacRoman); 
-		CGContextSetCharacterSpacing (myContext, 0);
-		
-		CGContextSetTextDrawingMode(myContext,kCGTextInvisible);
-		
 		NSString* warningMessage =
 			NSLocalizedStringFromTable( @"WarningMessage",
 										@"Messages",
 										@"" );
 		
-		CGContextShowTextAtPoint (myContext, 0, 0,
-								  [warningMessage cString],
-								  [warningMessage length]);
+		NSMutableDictionary *warningMessageAttrs = [NSMutableDictionary dictionaryWithCapacity:3];
+		NSFont *warningMessageFont = [NSFont fontWithName:@"LucidaGrande-Bold" size:height/20];
+		[warningMessageAttrs setObject:warningMessageFont forKey:NSFontAttributeName];
 		
-		CGPoint end = CGContextGetTextPosition(myContext);
-		float textWidth = end.x;
-
 		if (fadeDesktop) {
+			NSColor *textColor = [NSColor colorWithCalibratedRed:1.0 green:0.0 blue:0.0 alpha:0.75];
+			NSColor *strokeColor = [NSColor colorWithCalibratedWhite:1.0 alpha:0.75];
+			[warningMessageAttrs setObject:textColor forKey:NSForegroundColorAttributeName];
+			[warningMessageAttrs setObject:strokeColor forKey:NSStrokeColorAttributeName];
 			CGContextSetTextDrawingMode (myContext, kCGTextFillStroke);
-			CGContextSetRGBStrokeColor (myContext, 1, 1, 1, .75);
-		} else {
-			CGContextSetTextDrawingMode(myContext,kCGTextFill); 
 		}
-		CGContextSetRGBFillColor (myContext, 1, 0, 0, .5);
+		else {
+			NSColor *textColor = [NSColor colorWithCalibratedRed:1.0 green:0.0 blue:0.0 alpha:0.5];
+			[warningMessageAttrs setObject:textColor forKey:NSForegroundColorAttributeName];
+			CGContextSetTextDrawingMode(myContext,kCGTextFill);
+		}
 		
-		CGContextShowTextAtPoint (myContext, width/2 - textWidth/2, height/2,
-								  [warningMessage cString],
-								  [warningMessage length] );
+		[warningMessage drawAtPoint:NSMakePoint((width - [warningMessage sizeWithAttributes:warningMessageAttrs].width)/2, height/2)
+					 withAttributes:warningMessageAttrs];
 	}
 	
 	if (1)
@@ -98,32 +89,25 @@
 			NSLocalizedStringFromTable( @"UnlockMessage",
 										@"Messages",
 										@"" );
-															
-		CGContextSelectFont (myContext,
-							 "LucidaGrande-Bold",
-							 height/25,
-							 kCGEncodingMacRoman); 
-		CGContextSetCharacterSpacing (myContext, 0);
+		NSMutableDictionary *unlockMessageAttrs = [NSMutableDictionary dictionaryWithCapacity:3];
+		NSFont *unlockMessageFont = [NSFont fontWithName:@"LucidaGrande-Bold" size:height/25];
+		[unlockMessageAttrs setObject:unlockMessageFont forKey:NSFontAttributeName];
 		
-		CGContextSetTextDrawingMode(myContext,kCGTextInvisible);
-		CGContextShowTextAtPoint( myContext, 0, 0,
-								  [unlockMessage cString],
-								  [unlockMessage length]);
-		
-		CGPoint end = CGContextGetTextPosition(myContext);
-		float messageWidth = end.x;
-		
-		CGContextSetTextDrawingMode (myContext, kCGTextFillStroke);
 		if (fadeDesktop) {
-			CGContextSetRGBFillColor (myContext, 1, 1, 1, 0.8);
-			CGContextSetRGBStrokeColor (myContext, 0, 0, 0, 0.5);
-		} else {
-			CGContextSetRGBFillColor (myContext, 0, 0, 0, .95);
-			CGContextSetRGBStrokeColor (myContext, 1, 1, 1, .95);
+			NSColor *textColor = [NSColor colorWithCalibratedWhite:1.0 alpha:0.8];
+			NSColor *strokeColor = [NSColor colorWithCalibratedWhite:0.0 alpha:0.5];
+			[unlockMessageAttrs setObject:textColor forKey:NSForegroundColorAttributeName];
+			[unlockMessageAttrs setObject:strokeColor forKey:NSStrokeColorAttributeName];
 		}
-		CGContextShowTextAtPoint (myContext, width - messageWidth, 5,
-								  [unlockMessage cString],
-								  [unlockMessage length]);
+		else {
+			NSColor *textColor = [NSColor colorWithCalibratedWhite:0.0 alpha:0.95];
+			NSColor *strokeColor = [NSColor colorWithCalibratedWhite:1.0 alpha:0.95];
+			[unlockMessageAttrs setObject:textColor forKey:NSForegroundColorAttributeName];
+			[unlockMessageAttrs setObject:strokeColor forKey:NSStrokeColorAttributeName];
+		}
+		CGContextSetTextDrawingMode (myContext, kCGTextFillStroke);
+		[unlockMessage drawAtPoint:NSMakePoint(width - [unlockMessage sizeWithAttributes:unlockMessageAttrs].width - 5, 5)
+					withAttributes:unlockMessageAttrs];
 	}
 	
 	return;
