@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		58C00DC211A02464008A278A /* CatNip_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 58C00DC111A02464008A278A /* CatNip_Prefix.pch */; };
 		7B1EA6720F633CB400B15E10 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7B1EA6710F633CB400B15E10 /* InfoPlist.strings */; };
 		7B1EA6C10F63450600B15E10 /* Help in Resources */ = {isa = PBXBuildFile; fileRef = 7B1EA6C00F63450600B15E10 /* Help */; };
 		7B6C8AF80B5B1F8200EDD2F0 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B6C8AF70B5B1F8200EDD2F0 /* Carbon.framework */; };
@@ -14,10 +15,8 @@
 		7BE977B40B2DF29C00A414D0 /* CatNipPanePref.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BE977B10B2DF29C00A414D0 /* CatNipPanePref.m */; };
 		7BE977B80B2DF2AD00A414D0 /* CatNipPanePref.nib in Resources */ = {isa = PBXBuildFile; fileRef = 7BE977B60B2DF2AD00A414D0 /* CatNipPanePref.nib */; };
 		7BE977BC0B2DF2EF00A414D0 /* CatNipPrefPane.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 7BE977BB0B2DF2EF00A414D0 /* CatNipPrefPane.tiff */; };
-		7BE977E40B2DF40A00A414D0 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8D202CF70486D31800D8A456 /* Info.plist */; };
 		7BE9796C0B2E5BC200A414D0 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BE9796B0B2E5BC200A414D0 /* Security.framework */; };
 		7BE97C060B2F1BE100A414D0 /* CatNip.icns in Resources */ = {isa = PBXBuildFile; fileRef = 7BE97C050B2F1BE100A414D0 /* CatNip.icns */; };
-		8D202CEA0486D31800D8A456 /* CatNip_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 32DBCFA20370C41700C91783 /* CatNip_Prefix.pch */; };
 		8D202CED0486D31800D8A456 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C167DFE841241C02AAC07 /* Localizable.strings */; };
 		8D202CF30486D31800D8A456 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */; };
 		8D202CF40486D31800D8A456 /* PreferencePanes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F506C035013D953901CA16C8 /* PreferencePanes.framework */; };
@@ -28,7 +27,11 @@
 		089C167EFE841241C02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/Localizable.strings; sourceTree = "<group>"; };
 		089C167FFE841241C02AAC07 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
-		32DBCFA20370C41700C91783 /* CatNip_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CatNip_Prefix.pch; sourceTree = "<group>"; };
+		58242A7C11A29DD90029B2CB /* zh_TW */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = zh_TW; path = zh_TW.lproj/CatNipPanePref.nib; sourceTree = "<group>"; };
+		58242A7F11A29DEA0029B2CB /* zh_TW */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = zh_TW; path = zh_TW.lproj/Localizable.strings; sourceTree = "<group>"; };
+		58242A8011A29DF60029B2CB /* zh_TW */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = zh_TW; path = zh_TW.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		58242A8111A29DFF0029B2CB /* zh_TW */ = {isa = PBXFileReference; lastKnownFileType = folder; name = zh_TW; path = ../zh_TW.lproj/Help; sourceTree = SOURCE_ROOT; };
+		58C00DC111A02464008A278A /* CatNip_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CatNip_Prefix.pch; sourceTree = "<group>"; };
 		7B1EA66B0F633CAA00B15E10 /* English */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		7B1EA6780F633CCE00B15E10 /* French */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = French; path = French.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		7B1EA6CA0F6345CC00B15E10 /* French */ = {isa = PBXFileReference; lastKnownFileType = folder; name = French; path = ../French.lproj/Help; sourceTree = SOURCE_ROOT; };
@@ -132,7 +135,7 @@
 		32DBCFA10370C40200C91783 /* Other Sources */ = {
 			isa = PBXGroup;
 			children = (
-				32DBCFA20370C41700C91783 /* CatNip_Prefix.pch */,
+				58C00DC111A02464008A278A /* CatNip_Prefix.pch */,
 				7BE977B00B2DF29C00A414D0 /* CatNipPanePref.h */,
 				7BE97C050B2F1BE100A414D0 /* CatNip.icns */,
 				7BE977B10B2DF29C00A414D0 /* CatNipPanePref.m */,
@@ -149,8 +152,8 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8D202CEA0486D31800D8A456 /* CatNip_Prefix.pch in Headers */,
 				7BE977B30B2DF29C00A414D0 /* CatNipPanePref.h in Headers */,
+				58C00DC211A02464008A278A /* CatNip_Prefix.pch in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -185,6 +188,13 @@
 			buildConfigurationList = 1DBD214C08BA80EA00186707 /* Build configuration list for PBXProject "CatNip" */;
 			compatibilityVersion = "Xcode 3.0";
 			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+				zh_TW,
+			);
 			mainGroup = 089C166AFE841209C02AAC07 /* CatNip */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -202,7 +212,6 @@
 				8D202CED0486D31800D8A456 /* Localizable.strings in Resources */,
 				7BE977B80B2DF2AD00A414D0 /* CatNipPanePref.nib in Resources */,
 				7BE977BC0B2DF2EF00A414D0 /* CatNipPrefPane.tiff in Resources */,
-				7BE977E40B2DF40A00A414D0 /* Info.plist in Resources */,
 				7BE97C060B2F1BE100A414D0 /* CatNip.icns in Resources */,
 				7B1EA6C10F63450600B15E10 /* Help in Resources */,
 				7B1EA6720F633CB400B15E10 /* InfoPlist.strings in Resources */,
@@ -238,6 +247,7 @@
 			children = (
 				089C167EFE841241C02AAC07 /* English */,
 				7BB377990F63374300C1E047 /* French */,
+				58242A7F11A29DEA0029B2CB /* zh_TW */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
@@ -247,6 +257,7 @@
 			children = (
 				7B1EA66B0F633CAA00B15E10 /* English */,
 				7B1EA6780F633CCE00B15E10 /* French */,
+				58242A8011A29DF60029B2CB /* zh_TW */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -256,6 +267,7 @@
 			children = (
 				7B6C8AA10B5B152800EDD2F0 /* English */,
 				7B1EA6CA0F6345CC00B15E10 /* French */,
+				58242A8111A29DFF0029B2CB /* zh_TW */,
 			);
 			name = Help;
 			sourceTree = "<group>";
@@ -265,6 +277,7 @@
 			children = (
 				7BE977B70B2DF2AD00A414D0 /* English */,
 				7BB377790F63365100C1E047 /* French */,
+				58242A7C11A29DD90029B2CB /* zh_TW */,
 			);
 			name = CatNipPanePref.nib;
 			sourceTree = "<group>";
@@ -316,7 +329,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				PREBINDING = NO;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.5.sdk";
+				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.4u.sdk";
 			};
 			name = Debug;
 		};
@@ -328,7 +341,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				PREBINDING = NO;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.5.sdk";
+				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.4u.sdk";
 			};
 			name = Release;
 		};

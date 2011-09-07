@@ -30,6 +30,7 @@
 		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
 		32CA4F630368D1EE00C91783 /* CatNip_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CatNip_Prefix.pch; sourceTree = "<group>"; };
+		58242A6611A2938B0029B2CB /* zh_TW */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = zh_TW; path = zh_TW.lproj/Messages.strings; sourceTree = "<group>"; };
 		7B877EFC0B2CEC9400B8F2A1 /* TransparentWindow.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = TransparentWindow.h; sourceTree = "<group>"; };
 		7B877EFD0B2CEC9400B8F2A1 /* TransparentWindow.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = TransparentWindow.m; sourceTree = "<group>"; };
 		7B877F060B2CED1A00B8F2A1 /* JFWarningView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFWarningView.h; sourceTree = "<group>"; };
@@ -186,6 +187,7 @@
 				French,
 				German,
 				Dutch,
+				zh_TW,
 			);
 			mainGroup = 29B97314FDCFA39411CA2CEA /* CatNip */;
 			projectDirPath = "";
@@ -252,6 +254,7 @@
 				7BB9A6A00F634E8F00D8636D /* French */,
 				7BB9A6A20F634E9B00D8636D /* German */,
 				7BB9A6D20F63515A00D8636D /* Dutch */,
+				58242A6611A2938B0029B2CB /* zh_TW */,
 			);
 			name = Messages.strings;
 			sourceTree = "<group>";
