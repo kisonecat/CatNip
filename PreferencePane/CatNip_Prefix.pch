@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'CatNip' target in the 'CatNip' project
+//
+
+#ifdef __OBJC__
+#import <Cocoa/Cocoa.h>
+#endif
